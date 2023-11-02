@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Order</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <nav class="flex ai-center jc-sb">
+        <h3>Pesanan</h3>
+        <i class="fa-solid fa-wallet"></i>
+      </nav>
+    <!-- form -->
+      <form action="" class="form-order">
+        <div class="total">
+          <h5 style="color: var(--main-color-2);">Total Pembayaran</h3>
+          <h4 style="color: var(--main-color-1);">Rp. 109.000</h4>
+        </div>
+        <input type="text" placeholder="Catatan :">
+        <a href="" class="a">Metode pembayaran</a>
+        
+          <div class="payment flex ai-center jc-sb">
+              <div class="flex">
+                  <input type="radio" name="metode-bayar" id="resto-pay" >
+                  <label for="">Pay Later</label>
+              </div>
+              <div class="limitpaylater">
+                <p>Limit Pay Later</p>
+                <p style="color: orangered;" id="saldo">Rp 100.000</p>
+                <input type="hidden" id="limit-pay-later" value="100000">
+              </div>
+          </div>
+          <div class="payment flex ai-center jc-sb">
+            <div class="flex">
+                <input type="radio" name="metode-bayar" id="cash" >
+                <label for="">Cash</label>
+            </div>
+            <div class="limitpaylater">
+                <p>Limit Pay Later</p>
+                <p style="color: orangered;" id="saldo">Rp 100.000</p>
+                <input type="hidden" id="limit-pay-later" value="100000">
+            </div>
+        </div>
+        <a href="" class="btn" style="margin-top: 8rem;">Bayar Pesanan</a>
+        </div>
+      </form>
+      <footer>
+        <p>&copy; 2023 IMMMORTAL Resto</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
